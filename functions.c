@@ -4,7 +4,7 @@
 #include <string.h>
 //#include <ctype.h>
 //#include <stdbool.h>
-#include <math.h>
+//#include <math.h>
 #include "structures.h"
 
 
@@ -249,6 +249,15 @@ void *printChar(int len, char *stringers) {
     return NULL;
 }
 
+int pow(int base, int exponent)
+{
+    int result=1;
+    for (exponent; exponent>0; exponent--)
+    {
+        result = result * base;
+    }
+    return result;
+}
 
 unsigned char *ShowText(char *path) {
     FILE *in; //our file pointer
