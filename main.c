@@ -41,7 +41,7 @@ unsigned char *LoadBitmapFile(int argc, char *argv[], BITMAPINFOHEADER *bitmapIn
     PrintBMPFileHeader(bitmapInfoHeader);
     PrintBMPHeader(bitmapInfoHeader);
 
-    printf("Size of a file: %u bytes \n\n", sizeof(BITMAPINFOHEADER));
+    //printf("Size of a file: %lu bytes \n\n", sizeof(BITMAPINFOHEADER));
     if ((bitmapInfoHeader->biBitCount != 24) || (bitmapInfoHeader->biCompression != 0)) {
         printf("That histogram calculation is unsupported\n");
         fclose(in);
